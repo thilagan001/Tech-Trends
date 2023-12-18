@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: aqua !important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid black;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid rgb(194, 209, 208);
+}
+#navbarSupportedContent button{
+    border-radius: 10px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home {
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)), url(./lap.jpg);
+    background-size:cover;
+    background-position: center;
+    flex-direction: column ;
+}
+#home h1{
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.968);
+    text-shadow: 2px 10px 2px black;
+    
+}
+#home p{
+    font-size: 30px;
+    color: rgba(54, 174, 234, 0.821);
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: rgb(40, 167, 85) !important;
+    font-weight: 600;
+    color: white !important;
+}
+#about{
+    background: linear-gradient(to right,rgb(8, 58, 208),rgb(255, 255, 255) 100%);
+}  
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+} 
+#about p{
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+
+} 
+#product{
+    background: rgb(192, 185, 185);
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3);
+                inset: 4px 4px 10px white; 
+    border-radius: 20px !important;    
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;        
+                
+}
+.card:hover{
+    box-shadow: inset  20px 20px 20px rgba(0,0,0,.3);
+                inset: -4px -4px 10px white;
+    transition: .2s;
+}
+#contact img{
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#footer{
+    height: 100%;
+    width: 30px;
+    background: rgba(0,0,0,.7);
+    margin: -40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#product custom-card{
+    height: 10px;
+}
+footer {
+    text-align: center;
+    color: aqua;
+    padding: 10px;
+    background-color: #19191a; /* Optional background color */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    footer {
+      font-size: 14px;
+    }
+  }
+  
